@@ -1,29 +1,3 @@
-<!--Source Code Struktutur dasar HTML-->
-<!DOCTYPE html>
-<html>
-  <head>
-    <tittle>CSS Layoying : Display</tittle>
-  </head>
-<!--Source Code penggunaan tag div-->
-  <body>
-  <div class="header">
-    <h1>SELAMAT DATANG DI WEB</h1>
-  </div>
-    <div class="navigasi">
-      <a href="#">HOME </a>
-      <a href="#">PROFIL </a>
-      <a href="#">CONTACT </a>
-    </div>
-    <div class="main">
-          <p>Bagian Ini adalah Isi Web</p> </br>
-          <img src="https://malangpagi.com/wp-content/uploads/2021/05/Madiun-Kota-Pendekar-2-1024x532.jpg" height="100"/> 
-    </div>
-    <div class="footer">
-      <p>copyright @ 2023 WEB Programing UNIPMA</p>
-    </div>   
-  </body>
-</html>
-<hr>
 <!DOCTYPE html>
 <header>
   <h1>HTML5 Semantic</h1>
@@ -39,6 +13,35 @@
   Konten
 </section>
 <footer>
-  Copyright
+  Copyright @ Lissa Yuliyanti Nim 2205101095P
 </footer>
+
+<hr>
+nav{
+    background: #C9BFBF;
+    gride-area: nav;}
+header {
+    background: #707070
+    gride-area: header;
+    text-align: center; }
+section {
+    background: #ABABAB;
+    grid-area: section; }
+footer {
+    background: #707070
+    font-size: small;
+    text-align: center; }
+body {
+      display:grid;
+      grid-template-areas:
+      "header header header"
+      "nav section section"
+      "footer footer footer"
+grid-template-rows: 80px 1fr 50px;
+grid-template-columns: 20% 1fr 18%;
+grid-gap: 5px;
+height: 100vh;
+margin: 10px; }
+header, nav, section, footer {
+    padding: 5px }
 
